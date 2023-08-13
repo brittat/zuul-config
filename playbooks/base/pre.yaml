@@ -4,5 +4,5 @@
     - prepare-workspace
     - ensure-pip
     role: ensure-python
-      vars:
-        python_version: '3.10'
+    vars:
+      python_version: '3.10'
