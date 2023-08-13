@@ -2,3 +2,4 @@
   roles:
     - add-build-sshkey
     - prepare-workspace
+    - ensure-pip
