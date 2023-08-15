@@ -1,0 +1,5 @@
+- hosts: localhost
+  gather_facts: False
+  roles:
+    - role: fetch-output
+      zuul_output_dir: artifact_output
