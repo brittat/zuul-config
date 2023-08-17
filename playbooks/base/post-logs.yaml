@@ -4,5 +4,3 @@
     - generate-zuul-manifest
     - role: upload-logs
       zuul_log_url: "http://localhost:8000"
-    - role: fetch-output
-      zuul_output_dir: artifact_output
