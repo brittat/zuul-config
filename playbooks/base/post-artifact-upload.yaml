@@ -6,4 +6,4 @@
   roles:
     - role: fetch-output
       vars: 
-        zuul_output_dir: "root/zuul-output/"
+        zuul_output_dir: "{{zuul.project.src_dir}}/zuul-output/"
