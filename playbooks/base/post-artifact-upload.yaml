@@ -2,4 +2,4 @@
   gather_facts: False
   roles:
     - role: fetch-output
-      zuul_output_dir: artifact_output
+      zuul_output_dir: "{{ zuul.project.src_dir }}/artifact_output"
