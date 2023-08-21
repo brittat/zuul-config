@@ -36,16 +36,16 @@
       synchronize:
         dest: "{{ zj_output.dest }}/"
         mode: pull
-        src: "{{ zuul_output_dir }}/{{ zj_output.src }}/"
+        src: "{{ zuul_output_dir }}/{{ zj_output.src_ }}/"
         verify_host: true
         owner: false
         group: false
       loop:
         - dest: "{{ log_path }}"
-          src: "logs"
+          src_: "logs"
         - dest: "{{ zuul.executor.work_root }}/artifacts"
-          src: "artifacts"
+          src_: "artifacts"
         - dest: "{{ zuul.executor.work_root }}/docs"
-          src: "docs"
+          src_: "docs"
       loop_control:
         loop_var: zj_output
