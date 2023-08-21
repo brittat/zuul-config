@@ -1,7 +1,11 @@
 - hosts: localhost
   gather_facts: True 
   tasks:
-    - cmd: ls -l
-    - cmd: pwd
+    - command: ls -l
+    - command: pwd
     - debug:
-        msg: "{{ ansible_user_dir }}/zuul-output"
+        msg: "ansible_user_dir/zuul-output: {{ ansible_user_dir }}/zuul-output"
+    - debug:
+        msg: "ansible_user_dir: {{ ansible_user_dir }}"
+    - debug:
+        msg: "zuul.project.src_dir: {{ zuul.project.src_dir }}"
