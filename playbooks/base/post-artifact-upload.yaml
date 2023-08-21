@@ -5,4 +5,5 @@
         msg: "ansible_user_dir: {{ ansible_user_dir }}"    
   roles:
     - role: fetch-output
-      zuul_output_dir: "{{zuul.project.src_dir}}/zuul-output/"
+      zuul_output_dir: "src/gerrit/chess_simulator/zuul-output/"
+        #zuul_output_dir: "{{zuul.project.src_dir}}/zuul-output/"
