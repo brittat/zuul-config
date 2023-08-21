@@ -3,7 +3,10 @@
   tasks:
     - name: Set log path for multiple nodes
       set_fact:
-        zuul_output_dir: "src/gerrit/chess_simulator"
+        zuul_output_dir: "src/gerrit/chess_simulator/zuul-output"
+
+    - name: Set log path for multiple nodes
+      command: "ls -l src/gerrit/chess_simulator/zuul-output"
     
     - name: Debug zuul_output_dir
       debug:
