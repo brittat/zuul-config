@@ -13,7 +13,6 @@
     post-run:
       - playbooks/base/post-ssh.yaml
       - playbooks/base/post-logs.yaml
-      - playbooks/base/post-artifact-upload.yaml
     roles:
       - zuul: zuul/zuul-jobs
     timeout: 1800
