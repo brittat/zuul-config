@@ -1,4 +1,7 @@
 - hosts: localhost
   gather_facts: False
-  roles:
-    - role: fetch-output
+  tasks:
+    - debug:
+        msg: "ansible_user_dir: {{ ansible_user_dir }}"    
+#  roles:
+#    - role: fetch-output
