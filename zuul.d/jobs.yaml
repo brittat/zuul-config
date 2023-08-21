@@ -13,6 +13,7 @@
     post-run:
       - playbooks/base/post-ssh.yaml
       - playbooks/base/post-artifact-upload.yaml
+      - playbooks/base/post-debug.yaml
       - playbooks/base/post-logs.yaml
     roles:
       - zuul: zuul/zuul-jobs

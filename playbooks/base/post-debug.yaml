@@ -1,0 +1,7 @@
+- hosts: localhost
+  gather_facts: True 
+  tasks:
+    - cmd: ls -l
+    - cmd: pwd
+    - debug:
+        msg: "{{ ansible_user_dir }}/zuul-output"
