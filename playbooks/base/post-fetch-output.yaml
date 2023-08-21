@@ -3,7 +3,8 @@
   tasks:
     - name: Set log path for multiple nodes
       set_fact:
-        zuul_output_dir: "/home/britta/zuul_tutorial/zuul/doc/source/examples/zuul-output"
+        zuul_output_dir: "/etc/zuul-output"
+          #zuul_output_dir: "/home/britta/zuul_tutorial/zuul/doc/source/examples/zuul-output"
    
     - name: Set log path for multiple nodes
       set_fact:
