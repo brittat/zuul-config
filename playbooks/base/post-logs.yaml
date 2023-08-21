@@ -2,7 +2,6 @@
   gather_facts: False
   roles:
     - generate-zuul-manifest
-    - fetch-output
     - role: upload-logs
       vars:
         zuul_log_url: "http://localhost:8000"
