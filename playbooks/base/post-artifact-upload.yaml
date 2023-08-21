@@ -5,3 +5,5 @@
         msg: "ansible_user_dir: {{ ansible_user_dir }}"    
   roles:
     - role: fetch-output
+      vars: 
+        zuul_output_dir: "root/zuul-output/"
