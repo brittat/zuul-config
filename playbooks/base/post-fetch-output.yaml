@@ -1,6 +1,9 @@
 - hosts: all 
   gather_facts: True 
   tasks:
+    - name: debug hostname
+      command: hostname
+       
     - name: Set log path for multiple nodes
       set_fact:
           #zuul_output_dir: "/home/britta/zuul_tutorial/zuul/doc/source/examples/zuul-output"
